@@ -1,0 +1,104 @@
+/* TaskInput.module.css */
+.taskInput {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #1f2937;
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: #6b7280;
+}
+
+.input:focus {
+  outline: none;
+  color: white;
+}
+
+.priorityDropdown {
+  position: relative;
+}
+
+.priorityButton {
+  padding: 1rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 140px;
+  justify-content: space-between;
+}
+
+.priorityButton:hover {
+  border-color: #d1d5db;
+}
+
+.arrow {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.priorityMenu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background-color: #4b5563;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  min-width: 140px;
+  z-index: 10;
+}
+
+.priorityItem {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.priorityItem:hover {
+  background-color: #374151;
+}
+
+.priorityItem.selected {
+  background-color: #3b82f6;
+}
+
+.checkmark {
+  font-weight: bold;
+}
+
+.addButton {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #2563eb;
+}

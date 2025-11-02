@@ -1,0 +1,11 @@
+/* TaskList.module.css */
+.taskList {
+  margin-top: 1.5rem;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem;
+  font-size: 1rem;
+}

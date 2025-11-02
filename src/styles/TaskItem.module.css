@@ -1,0 +1,52 @@
+/* TaskItem.module.css */
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-left: 1rem;
+}
+
+/* 優先度別カラーバー（README.1理論.md 第3.3節 CSS Modules活用） */
+.colorBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.colorBar[data-priority='high'] {
+  background-color: #ef4444; /* 赤 */
+}
+
+.colorBar[data-priority='medium'] {
+  background-color: #f59e0b; /* 黄 */
+}
+
+.colorBar[data-priority='low'] {
+  background-color: #10b981; /* 緑 */
+}
+
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+  margin-left: 0.75rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.title.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
